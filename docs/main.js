@@ -81,10 +81,10 @@ loader.load(
   },
   function (xhr) {
     // ✅ Mostrar progreso si deseas (opcional)
-    const percent = (xhr.loaded / xhr.total) * 100;
+    // const percent = (xhr.loaded / xhr.total) * 100;
     const loadingText = document.getElementById("loading-text");
     if (loadingText && xhr.lengthComputable) {
-      loadingText.textContent = `Cargando modelo: ${percent.toFixed(0)}%`;
+      loadingText.textContent = `Cargando modelo ...`;
     }
   },
   function (error) {
